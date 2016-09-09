@@ -14,12 +14,39 @@ class SimpleRatesGetter implements RatesGetterInterface
     private $rates = [
         'PLN' => [
             'PLN' => 1,
-            'EUR' => 0.2268
+            'EUR' => 0.2268,
+            'USD' => 2,
+            'GBP' => 2.5,
+            'RUB' => 2.4
         ],
         'EUR' => [
             'PLN' => 4.4099,
-            'EUR' => 1
-        ]
+            'EUR' => 1,
+            'USD' => 1.5,
+            'GBP' => 1.7,
+            'RUB' => 2.2
+        ],
+        'USD' => [
+            'PLN' => 3.4099,
+            'EUR' => 1.5,
+            'USD' => 1,
+            'GBP' => 1.6,
+            'RUB' => 2.1
+        ],
+        'GBP' => [
+            'PLN' => 2.4099,
+            'EUR' => 1.5,
+            'USD' => 1.6,
+            'GBP' => 1,
+            'RUB' => 2
+        ],
+        'RUB' => [
+            'PLN' => 0.4099,
+            'EUR' => 0.2,
+            'USD' => 0.3,
+            'GBP' => 1.1,
+            'RUB' => 1
+        ],
     ];
 
     /**
