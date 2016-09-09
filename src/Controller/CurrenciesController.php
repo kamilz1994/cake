@@ -22,6 +22,10 @@ class CurrenciesController extends AppController
                 $currencyFrom = $this->request->data('currency_from');
                 $currencyTo = $this->request->data('currency_to');
                 $amount = (float)$this->request->data('amount');
+                if($amount<0) {
+                    $this->Flash->error(__('Liczba nie może być ujemna. Spróbuj ponowanie...'));
+                    $amount = 0;
+                }
                 $result = $currencyService->convert($amount, $currencyFrom, $currencyTo);
                 $this->set('amount', $amount);
                 $this->set('currencyFrom', $currencyFrom);
