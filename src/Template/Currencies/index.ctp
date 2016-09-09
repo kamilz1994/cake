@@ -12,8 +12,8 @@ $formHelper = $this->Form;
         <h1><?php echo __('Convert currency'); ?></h1>
         <?= $formHelper->create(null); ?>
         <?= $formHelper->input('amount', ['val' => $amount]); ?>
-        <?= $formHelper->input('currency_from', ['options' => ['PLN' => 'PLN', 'EUR' => 'EUR'], 'val' => $currencyFrom]); ?>
-        <?= $formHelper->input('currency_to', ['options' => ['PLN' => 'PLN', 'EUR' => 'EUR'], 'val' => $currencyTo]); ?>
+        <?= $formHelper->input('currency_from', ['options' => ['PLN' => 'PLN', 'EUR' => 'EUR', 'USD' => 'USD', 'GBP' => 'GBP', 'RUB' => 'RUB'], 'val' => $currencyFrom]); ?>
+        <?= $formHelper->input('currency_to', ['options' => ['PLN' => 'PLN', 'EUR' => 'EUR', 'USD' => 'USD', 'GBP' => 'GBP', 'RUB' => 'RUB'], 'val' => $currencyTo]); ?>
         <?= $formHelper->submit(__('Submit')); ?>
         <?= $formHelper->end(); ?>
     </div>
